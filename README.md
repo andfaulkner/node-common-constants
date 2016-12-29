@@ -19,10 +19,11 @@ Also, it's typescript friendly, because I love you guys.
 ## Date and time values (constants.datetime)
 
 ### Leap year handler
-    *  technically not a constant, but it's commonly needed when date constants are required
+(technically not a constant, but it's commonly needed when date constants are required)
 
     isLeap: (year: number | string) => boolean
-    *   returns true if the given year is a leap year, false if not
+
+*   returns true if the given year is a leap year, false if not
 
 ### Milliseconds per second
     msInSec:               1000
