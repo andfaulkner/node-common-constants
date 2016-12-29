@@ -2,6 +2,14 @@
 
 I find myself defining the same constants in project after project. Time to put a stop to that.
 
+## Installation
+
+    yarn add common-constants
+
+    OR
+
+    npm add --save common-constants
+
 Exports an object literal containing a set of common constants. Categories:
 
 *   date and time (constants.datetime)

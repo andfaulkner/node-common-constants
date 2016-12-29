@@ -1,6 +1,6 @@
 {
   "name": "common-constants",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "A set of constants commonly used across many projects, relating to e.g. date, time, ports, logging, and math",
   "main": "lib/index.js",
   "typings": "lib/index",
