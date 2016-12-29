@@ -43,9 +43,9 @@ Magic numbers are confusing. If you see an algorithm containing the number 60, w
 
     isLeap: (year: number | string) => boolean
 
-*   returns true if the given year is a leap year, false if not
+Returns true if the given year is a leap year, false if not
 
-    // Milliseconds per second
+    ### Milliseconds per second
     msPerSec:              1000,
     msInSec:               1000,
     millisecondsInSeconds: 1000,
@@ -59,7 +59,7 @@ Magic numbers are confusing. If you see an algorithm containing the number 60, w
     msPerSeconds:          1000,
     millisecondsPerSec:    1000,
 
-    // Seconds per minute
+    ### Seconds per minute
     secInMin:              60
     secsInMin:             60
     secPerMin:             60
@@ -71,7 +71,7 @@ Magic numbers are confusing. If you see an algorithm containing the number 60, w
     secsPerMinute:         60
     secsInMinute:          60
 
-    // Seconds per hour
+    ### Seconds per hour
     secInHr:               3600
     secsInHr:              3600
     secPerHr:              3600
@@ -85,7 +85,7 @@ Magic numbers are confusing. If you see an algorithm containing the number 60, w
     secondsPerHr:          3600
     secondsInHr:           3600
 
-    // Minutes per hour
+    ### Minutes per hour
     minInHr:               60
     minInHour:             60
     minutesInHr:           60
@@ -95,7 +95,7 @@ Magic numbers are confusing. If you see an algorithm containing the number 60, w
     minutesPerHour:        60
     minutesPerHr:          60
 
-    // Hours per day
+    ### Hours per day
     hrInDay:               24
     hrsInDay:              24
     hoursInDay:            24
@@ -103,7 +103,7 @@ Magic numbers are confusing. If you see an algorithm containing the number 60, w
     hrsPerDay:             24
     hoursPerDay:           24
 
-    // Days per year (both leap and regular)
+    ### Days per year (both leap and regular)
     daysInCommonYear:      365
     daysInLeapYear:        366
     daysPerCommonYear:     365
@@ -125,7 +125,7 @@ Magic numbers are confusing. If you see an algorithm containing the number 60, w
     daysInNonleapYr:       365
     daysPerNonleapYr:      365
 
-    // Days per month
+    ### Days per month
     daysInMonth:           daysPerMonth
     daysPerMon:            daysPerMonth
     daysInMon:             daysPerMonth
