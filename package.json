@@ -1,6 +1,6 @@
 {
   "name": "common-constants",
-  "version": "1.2.6",
+  "version": "1.2.7",
   "description": "A set of constants commonly used across many projects, relating to e.g. date, time, ports, logging, and math",
   "main": "lib/index.js",
   "typings": "lib/index",
@@ -11,7 +11,6 @@
     "compile-ts": "./node_modules/typescript/bin/tsc -p ./",
     "compile-ts:watch": "./node_modules/typescript/bin/tsc -p ./ --watch",
     "test": "mocha test/",
-    "boilerplate-check": "./script/ensure-fully-implemented.rb",
     "test:watch": "chokidar ./lib/** ./config/** ./test/** --initial -c \"mocha test/\""
   },
   "repository": {
