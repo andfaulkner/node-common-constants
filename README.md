@@ -181,13 +181,13 @@ Magic numbers are confusing. If you see an algorithm containing the number 60, w
     rightAngleDegrees:   90
     rightAngle:          90
 
-    // sides in a square
+    // Geometry: sides in a square
     sidesInSquare:       4
     sidesInASquare:      4
     squareSides:         4
     numSidesSquare:      4
 
-    // sides in a triangle
+    // Geometry: sides in a triangle
     sidesInTriangle:     3
     sidesInATriangle:    3
     triangleSides:       3
