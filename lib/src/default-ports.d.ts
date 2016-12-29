@@ -1,0 +1,21 @@
+export declare const defaultPorts: {
+    redis: number;
+    mongo: number;
+    mongodb: number;
+    postgres: number;
+    postgresql: number;
+    pg: number;
+    mysql: number;
+    express: number;
+    expressjs: number;
+    expressJS: number;
+    expressJs: number;
+    http: number;
+    telnet: number;
+    smtp: number;
+    dns: number;
+    pop3: number;
+    irc: number;
+    https: number;
+    ssh: number;
+};

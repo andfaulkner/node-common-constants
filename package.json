@@ -1,7 +1,7 @@
 {
-  "name": "node-typescript-module-boilerplate",
+  "name": "common-constants",
   "version": "1.0.0",
-  "description": "/***** TODO Stuff and things ******/",
+  "description": "A set of constants commonly used across many projects, relating to e.g. date, time, ports, logging, and math",
   "main": "lib/index.js",
   "typings": "lib/index",
   "files": [
@@ -16,27 +16,34 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/andfaulkner/node-typescript-module-boilerplate.git"
+    "url": "git+https://github.com/andfaulkner/common-constants.git"
   },
   "keywords": [
-    "/**** TODO ADD KEYWORDS ****/"
+    "constants",
+    "date",
+    "time",
+    "logging",
+    "log",
+    "logs",
+    "ports",
+    "port",
+    "defaults",
+    "sane-defaults",
+    "math",
+    "maths",
+    "mathematics",
+    "science"
   ],
   "author": "Andrew Faulkner <andfaulkner@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/andfaulkner/node-typescript-module-boilerplate/issues"
+    "url": "https://github.com/andfaulkner/common-constants/issues"
   },
-  "homepage": "https://github.com/andfaulkner/node-typescript-module-boilerplate#readme",
-  "dependencies": {
-    "colors": "^1.1.2",
-    "detect-node": "^2.0.3",
-    "string.prototype.padend": "^3.0.0"
-  },
+  "homepage": "https://github.com/andfaulkner/common-constants#readme",
+  "dependencies": { },
   "devDependencies": {
-    "@types/lodash": "^4.14.43",
     "@types/node": "^6.0.52",
     "chai": "^3.5.0",
-    "colors": "^1.1.2",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-promise": "^3.4.0",
     "lodash": "^4.17.2",
@@ -45,7 +52,4 @@
     "test-console": "^1.0.0",
     "typescript": "2.1.4"
   },
-  "peerDependencies": {
-    "lodash": "^4.17.2"
-  }
 }

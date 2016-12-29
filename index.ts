@@ -1,21 +1,36 @@
 /************************************** THIRD-PARTY IMPORTS ***************************************/
-import * as isNode from 'detect-node';
+import { datetime } from './src/datetime';
+import { math } from './src/math';
+import { defaultPorts } from './src/default-ports';
+import { science } from './src/science';
 
-/************************************* IMPORT PROJECT MODULES *************************************/
-const colors = (isNode)
-    ? require('colors/safe')
-    : {};
+const logLevels = {
+    silly: 1,
+    verbose: 2,
+    debug: 3,
+    info: 4,
+    warn: 5,
+    error: 6,
+    wtf: 7,
+};
 
 /**************************************** TYPE DEFINITIONS ****************************************/
-export interface INodeModuleBoilerplate {
-    nodeModuleBoilerplatePlaceholder: string;
-    nodeModuleBoilerplatePlaceholderFn: (test: string) => never;
-}
+export const commonConstants = {
+    datetime,
+    dateTime: datetime,
+    dateAndTime: datetime,
 
-const nodeModuleBoilerplateExport: INodeModuleBoilerplate = {
-    nodeModuleBoilerplatePlaceholder: 'placeholder',
-    nodeModuleBoilerplatePlaceholderFn: (test: string) => { throw new Error('Boilerplate fn called') },
-}
+    math,
 
-export { nodeModuleBoilerplateExport }
+    defaultPorts,
+    defPorts: defaultPorts,
 
+    science,
+    sci: science,
+
+    logLevels,
+    logLvls: logLevels,
+
+    lifeTheUniverseAndEverything: 42,
+    lifeTheUniverseEverything: 42,
+};
