@@ -6,7 +6,7 @@ I find myself defining the same constants in project after project. Time to put 
 
     yarn add common-constants
 
-    OR
+OR
 
     npm add --save common-constants
 
