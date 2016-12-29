@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/andfaulkner/common-constants.git"
+    "url": "git+https://github.com/andfaulkner/node-common-constants.git"
   },
   "keywords": [
     "constants",
@@ -37,9 +37,9 @@
   "author": "Andrew Faulkner <andfaulkner@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/andfaulkner/common-constants/issues"
+    "url": "https://github.com/andfaulkner/node-common-constants/issues"
   },
-  "homepage": "https://github.com/andfaulkner/common-constants#readme",
+  "homepage": "https://github.com/andfaulkner/node-common-constants#readme",
   "dependencies": { },
   "devDependencies": {
     "@types/node": "^6.0.52",
