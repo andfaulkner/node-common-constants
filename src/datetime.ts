@@ -43,11 +43,27 @@ const daysPerMonth = {
 };
 
 export const datetime = {
+    //Function to detect leap years
     isLeap,
-    msInSec: 1000,
-    millisecondsInSeconds: 1000,
-    msInSeconds: 1000,
 
+    // milliseconds per second
+    msInSec: 1000,
+    msPerSec: 1000,
+
+    millisecondsInSeconds: 1000,
+    millisecondsInSecond: 1000,
+    millisecondsPerSecond: 1000,
+
+    msInSeconds: 1000,
+    msInSecond: 1000,
+    msInASecond: 1000,
+    msIn1Sec: 1000,
+
+    msPerSecond: 1000,
+    msPerSeconds: 1000,
+    millisecondsPerSec: 1000,
+
+    //Seconds per minute
     secInMin: 60,
     secsInMin: 60,
     secPerMin: 60,
@@ -59,6 +75,21 @@ export const datetime = {
     secsPerMinute: 60,
     secsInMinute: 60,
 
+    //Seconds per hour
+    secInHr:               3600,
+    secsInHr:              3600,
+    secPerHr:              3600,
+    secsPerHr:             3600,
+    secPerHour:            3600,
+    secInHour:             3600,
+    secsPerHour:           3600,
+    secsInHour:            3600,
+    secondsPerHour:        3600,
+    secondsInHour:         3600,
+    secondsPerHr:          3600,
+    secondsInHr:           3600,
+
+    //Minutes per hour
     minInHr: 60,
     minInHour: 60,
     minutesInHr: 60,

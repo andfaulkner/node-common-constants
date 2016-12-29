@@ -15,6 +15,18 @@ name allowed. e.g. minInHour, minPerHour, minInHr, minPerHr, minutesPerHour, min
 
 Also, it's typescript friendly, because I love you guys.
 
+## Why?
+Magic numbers are confusing. If you see an algorithm containing the number 60, what are you looking at exactly? Seconds per minute? Minutes per hour? Degrees in one sixth of a circle? Named constants get rid of the problem
+
+----
+## Usage example
+
+    import { datetime } as DATETIME_CONST from 'common-constants';
+
+    console.log(DATETIME_CONST.daysPerMonth.jan); // => 31
+    console.log(DATETIME_CONST.daysInCommonYear); // => 365
+    console.log(DATETIME_CONST.hrInDay); // => 24
+
 ----
 ## Date and time values (constants.datetime)
 
@@ -26,9 +38,18 @@ Also, it's typescript friendly, because I love you guys.
 *   returns true if the given year is a leap year, false if not
 
 ### Milliseconds per second
-    msInSec:               1000
-    millisecondsInSeconds: 1000
-    msInSeconds:           1000
+    msPerSec:              1000,
+    msInSec:               1000,
+    millisecondsInSeconds: 1000,
+    millisecondsInSecond:  1000,
+    millisecondsPerSecond: 1000,
+    msInSeconds:           1000,
+    msInSecond:            1000,
+    msInASecond:           1000,
+    msIn1Sec:              1000,
+    msPerSecond:           1000,
+    msPerSeconds:          1000,
+    millisecondsPerSec:    1000,
 
 ### Seconds per minute
     secInMin:              60
@@ -41,6 +62,20 @@ Also, it's typescript friendly, because I love you guys.
     secInMinute:           60
     secsPerMinute:         60
     secsInMinute:          60
+
+### Seconds per hour
+    secInHr:               3600
+    secsInHr:              3600
+    secPerHr:              3600
+    secsPerHr:             3600
+    secPerHour:            3600
+    secInHour:             3600
+    secsPerHour:           3600
+    secsInHour:            3600
+    secondsPerHour:        3600
+    secondsInHour:         3600
+    secondsPerHr:          3600
+    secondsInHr:           3600
 
 ### Minutes per hour
     minInHr:               60
@@ -72,14 +107,14 @@ Also, it's typescript friendly, because I love you guys.
     daysPerNormalYear:     365
     daysInNormalYr:        365
     daysPerNormalYr:       365
-    daysInRegularYear:      365
-    daysPerRegularYear:     365
-    daysInRegularYr:        365
-    daysPerRegularYr:       365
-    daysInNonleapYear:      365
-    daysPerNonleapYear:     365
-    daysInNonleapYr:        365
-    daysPerNonleapYr:       365
+    daysInRegularYear:     365
+    daysPerRegularYear:    365
+    daysInRegularYr:       365
+    daysPerRegularYr:      365
+    daysInNonleapYear:     365
+    daysPerNonleapYear:    365
+    daysInNonleapYr:       365
+    daysPerNonleapYr:      365
 
     ## daysPerMonth
     daysInMonth:           daysPerMonth
@@ -87,34 +122,34 @@ Also, it's typescript friendly, because I love you guys.
     daysInMon:             daysPerMonth
 
     daysPerMonth:
-        jan:                             31
-        january:                         31
+        jan:               31
+        january:           31
         feb:
             common: 28
-            leap: 29
+            leap:   29
         february:
             common: 28
-            leap: 29
-        mar:                             31
-        march:                           31
-        apr:                             30
-        april:                           30
-        may:                             31
-        jun:                             30
-        june:                            30
-        jul:                             31
-        july:                            31
-        aug:                             31
-        august:                          31
-        sep:                             30
-        sept:                            30
-        september:                       30
-        oct:                             31
-        october:                         31
-        nov:                             30
-        november:                        30
-        dec:                             31
-        december:                        31
+            leap:   29
+        mar:               31
+        march:             31
+        apr:               30
+        april:             30
+        may:               31
+        jun:               30
+        june:              30
+        jul:               31
+        july:              31
+        aug:               31
+        august:            31
+        sep:               30
+        sept:              30
+        september:         30
+        oct:               31
+        october:           31
+        nov:               30
+        november:          30
+        dec:               31
+        december:          31
 
 ----
 ## Math
