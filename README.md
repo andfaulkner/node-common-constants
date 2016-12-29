@@ -87,6 +87,7 @@ Magic numbers are confusing. If you see an algorithm containing the number 60, w
     minutesPerHour:        60
     minutesPerHr:          60
 
+### Hours per day
     hrInDay:               24
     hrsInDay:              24
     hoursInDay:            24
