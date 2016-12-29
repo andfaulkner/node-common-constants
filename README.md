@@ -117,7 +117,7 @@ Magic numbers are confusing. If you see an algorithm containing the number 60, w
     daysInNonleapYr:       365
     daysPerNonleapYr:      365
 
-    ## daysPerMonth
+### daysPerMonth
     daysInMonth:           daysPerMonth
     daysPerMon:            daysPerMonth
     daysInMon:             daysPerMonth
