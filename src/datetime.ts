@@ -49,16 +49,13 @@ export const datetime = {
     // milliseconds per second
     msInSec: 1000,
     msPerSec: 1000,
-
     millisecondsInSeconds: 1000,
     millisecondsInSecond: 1000,
     millisecondsPerSecond: 1000,
-
     msInSeconds: 1000,
     msInSecond: 1000,
     msInASecond: 1000,
     msIn1Sec: 1000,
-
     msPerSecond: 1000,
     msPerSeconds: 1000,
     millisecondsPerSec: 1000,
