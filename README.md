@@ -4,11 +4,11 @@ I find myself defining the same constants in project after project. Time to put 
 
 Exports an object literal containing a set of common constants. Categories:
 
-    *   date and time (constants.datetime)
-    *   math  (constants.math)
-    *   default ports for various databases and servers (constants.defaultPorts),
-    *   science (constants.science)
-    *   common log levels and corresponding numeric values (constants.logLevels)
+*   date and time (constants.datetime)
+*   math  (constants.math)
+*   default ports for various databases and servers (constants.defaultPorts),
+*   science (constants.science)
+*   common log levels and corresponding numeric values (constants.logLevels)
 
 I am forgetful, so it was made to be extremely forgiving, with multiple variants of each constant
 name allowed. e.g. minInHour, minPerHour, minInHr, minPerHr, minutesPerHour, minutesPerHr, etc.).
