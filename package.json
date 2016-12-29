@@ -51,5 +51,5 @@
     "sinon": "^1.17.6",
     "test-console": "^1.0.0",
     "typescript": "2.1.4"
-  },
+  }
 }
