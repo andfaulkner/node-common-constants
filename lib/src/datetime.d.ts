@@ -1,8 +1,17 @@
 export declare const datetime: {
     isLeap: (year: string | number) => boolean;
     msInSec: number;
+    msPerSec: number;
     millisecondsInSeconds: number;
+    millisecondsInSecond: number;
+    millisecondsPerSecond: number;
     msInSeconds: number;
+    msInSecond: number;
+    msInASecond: number;
+    msIn1Sec: number;
+    msPerSecond: number;
+    msPerSeconds: number;
+    millisecondsPerSec: number;
     secInMin: number;
     secsInMin: number;
     secPerMin: number;
@@ -13,6 +22,18 @@ export declare const datetime: {
     secInMinute: number;
     secsPerMinute: number;
     secsInMinute: number;
+    secInHr: number;
+    secsInHr: number;
+    secPerHr: number;
+    secsPerHr: number;
+    secPerHour: number;
+    secInHour: number;
+    secsPerHour: number;
+    secsInHour: number;
+    secondsPerHour: number;
+    secondsInHour: number;
+    secondsPerHr: number;
+    secondsInHr: number;
     minInHr: number;
     minInHour: number;
     minutesInHr: number;

@@ -1,7 +1,7 @@
 /************************************** THIRD-PARTY IMPORTS ***************************************/
 import { datetime } from './src/datetime';
 import { math } from './src/math';
-import { defaultPorts } from './src/default-ports';
+import { defaultPorts, dbPorts, dbPortsList } from './src/default-ports';
 import { science } from './src/science';
 
 const logLevels = {
@@ -22,8 +22,17 @@ export const commonConstants = {
 
     math,
 
-    defaultPorts,
+    defaultPorts: {
+        db: dbPorts,
+        dbPortsList,
+        general: defaultPorts,
+        all: Object.assign({}, dbPorts, defaultPorts)
+    },
+
     defPorts: defaultPorts,
+
+    dbPorts,
+    dbPortsList,
 
     science,
     sci: science,

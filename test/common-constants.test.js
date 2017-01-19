@@ -12,6 +12,7 @@ const mocha = require('mocha');
 const fs = require('fs');
 const path = require('path');
 const { stderr, stdout } = require('test-console');
+const _ = require('lodash');
 
 /*********************************** IMPORT FILES TO BE TESTED ************************************/
 const CONSTANTS = require('../lib/index').commonConstants;
@@ -23,6 +24,7 @@ const sci = CONSTANTS.sci;
 const logLevels = CONSTANTS.logLevels;
 const logLvls = CONSTANTS.logLvls;
 const lifeTheUniverseAndEverything = CONSTANTS.lifeTheUniverseAndEverything;
+const { dbPortsList, dbPorts } = CONSTANTS;
 
 /******************************************** HELPERS *********************************************/
 /**
@@ -86,6 +88,42 @@ describe('constants.math', function() {
 describe('constants.defaultPorts', function() {
     it('exists', function () {
         expect(defaultPorts).to.exist;
+    });
+});
+
+describe('constants.dbPorts', function() {
+    it('exists', function () {
+        expect(dbPorts).to.exist;
+    });
+});
+
+describe('constants.dbPortsList', function() {
+    it('exists', function () {
+        expect(dbPortsList).to.exist;
+    });
+    it('is an array', function() {
+        expect(dbPortsList).to.be.a('array');
+    });
+    it('contains only numbers', function() {
+        _.forEach(dbPortsList, (dbPort) => {
+            expect(dbPort).to.be.a('number');
+        });
+    });
+    it('contains referenced numbers, and all numbers in referenced (source) arrays', function() {
+        expect(dbPortsList).to.contain(1025);
+        expect(dbPortsList).to.contain(1433);
+        expect(dbPortsList).to.contain(1521);
+        expect(dbPortsList).to.contain(1526);
+        expect(dbPortsList).to.contain(1530);
+        expect(dbPortsList).to.contain(3306);
+        expect(dbPortsList).to.contain(5000);
+        expect(dbPortsList).to.contain(5432);
+        expect(dbPortsList).to.contain(5984);
+        expect(dbPortsList).to.contain(6379);
+        expect(dbPortsList).to.contain(9200);
+        expect(dbPortsList).to.contain(27017);
+        expect(dbPortsList).to.contain(27018);
+        expect(dbPortsList).to.contain(50000);
     });
 });
 
