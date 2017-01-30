@@ -10,14 +10,15 @@
         "outDir": "lib/",
         "declaration": true,
 
-        "target": "ES6",
+        "target": "ES5",
         "moduleResolution": "node",
         "allowSyntheticDefaultImports": true,
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
         "removeComments": false,
         "jsx": "preserve",
-        "pretty": true
+        "pretty": true,
+        "lib": ["es6"]
     },
     "exclude": [
         "*.js",

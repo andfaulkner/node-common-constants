@@ -3,7 +3,6 @@
 I find myself defining the same constants in project after project. Time to put a stop to that.
 
 ## Installation
-
     yarn add common-constants
 
 OR
@@ -205,25 +204,29 @@ Returns true if the given year is a leap year, false if not
 ----
 ## Default ports (constants.defaultPorts)
 
-    redis:      6379
-    mongo:      27018
-    mongodb:    27018
-    postgres:   5432
-    postgresql: 5432
-    pg:         5432
-    mysql:      3306
-    express:    3000
-    expressjs:  3000
-    expressJS:  3000
-    expressJs:  3000
-    http:       80
-    telnet:     23
-    smtp:       25
-    dns:        53
-    pop3:       110
-    irc:        194
-    https:      443
-    ssh:        22
+    dbPorts:        [1025, 1433, 1521, 1522, ..., 6379, 7199, 8983, 9200, 27017, 27018, 50000],
+
+    all:
+        redis:      6379
+        mongo:      27018
+        mongodb:    27018
+        postgres:   5432
+        postgresql: 5432
+        pg:         5432
+        mysql:      3306
+        express:    3000
+        expressjs:  3000
+        expressJS:  3000
+        expressJs:  3000
+        http:       80
+        telnet:     23
+        smtp:       25
+        dns:        53
+        pop3:       110
+        irc:        194
+        https:      443
+        ssh:        22
+        ...etc...
 
 ----
 ## Log levels - as numeric values (constants.logLevels)
