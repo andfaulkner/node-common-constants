@@ -1,8 +1,10 @@
-declare const _: any;
+declare var _: any;
 
-const uniq = ((typeof _ !== 'undefined') && (typeof _ !== 'null') && (_ !== null) && (_))
+const uniq = (((typeof _ !== 'undefined') && (typeof _ !== 'null') && (_ !== null) && (_)))
     ? _.uniq
-    : require('lodash.uniq');
+    : (require('lodash'))
+        ? require('lodash').uniq
+        : require('lodash.uniq');
 
 export const dbPorts = {
     teradata: 1025,
