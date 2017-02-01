@@ -24,6 +24,7 @@ const sci = CONSTANTS.sci;
 const logLevels = CONSTANTS.logLevels;
 const logLvls = CONSTANTS.logLvls;
 const lifeTheUniverseAndEverything = CONSTANTS.lifeTheUniverseAndEverything;
+const lengths = CONSTANTS.lengths;
 const { dbPortsList, dbPorts } = CONSTANTS;
 
 /******************************************** HELPERS *********************************************/
@@ -154,6 +155,18 @@ describe('constants.logLvls', function() {
 describe('constants.lifeTheUniverseAndEverything', function() {
     it('exists', function () {
         expect(lifeTheUniverseAndEverything).to.exist;
+    });
+});
+
+describe('constants.lengths', function() {
+    it('exists', function () {
+        expect(lengths).to.exist;
+    });
+    it('has field maxChars', function () {
+        expect(lengths.maxChars).to.exist;
+    });
+    it('has field maxSeconds', function () {
+        expect(lengths.maxSeconds).to.exist;
     });
 });
 
