@@ -26,6 +26,7 @@ const logLvls = CONSTANTS.logLvls;
 const lifeTheUniverseAndEverything = CONSTANTS.lifeTheUniverseAndEverything;
 const lengths = CONSTANTS.lengths;
 const { dbPortsList, dbPorts } = CONSTANTS;
+const { regexps } = CONSTANTS;
 
 /******************************************** HELPERS *********************************************/
 /**
@@ -167,6 +168,24 @@ describe('constants.lengths', function() {
     });
     it('has field maxSeconds', function () {
         expect(lengths.maxSeconds).to.exist;
+    });
+});
+
+describe('constants.regexps', function() {
+    it('exists', function () {
+        expect(regexps).to.exist;
+    });
+    it('has field FIRST_CHAR_REGEXP', function () {
+        expect(regexps.FIRST_CHAR_REGEXP).to.exist;
+    });
+    it('has field TIME_24HR_FORMAT', function () {
+        expect(regexps.TIME_24HR_FORMAT).to.exist;
+    });
+    it('has field "DD/MM/YY_DATE"', function () {
+        expect(regexps["DD/MM/YY_DATE"]).to.exist;
+    });
+    it('has field HEX_OF_COLOR_VAL', function () {
+        expect(regexps.HEX_OF_COLOR_VAL).to.exist;
     });
 });
 
