@@ -3,6 +3,7 @@ import { datetime } from './src/datetime';
 import { math } from './src/math';
 import { defaultPorts, dbPorts, dbPortsList } from './src/default-ports';
 import { science } from './src/science';
+import { regexps } from './src/regexps';
 
 const logLevels = {
     silly: 1,
@@ -64,4 +65,5 @@ export const commonConstants = {
             youtubeVideo: 43200,
         }
     },
+    regexps,
 };
