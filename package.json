@@ -1,6 +1,6 @@
 {
   "name": "common-constants",
-  "version": "2.4.2",
+  "version": "2.4.3",
   "description": "A set of constants commonly used across many projects, relating to e.g. date, time, ports, logging, and math",
   "main": "lib/index.js",
   "typings": "lib/index",
@@ -45,12 +45,13 @@
     "chai": "^3.5.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-promise": "^3.4.0",
+    "lodash": "4.17.4",
     "mocha": "^3.2.0",
     "sinon": "^1.17.6",
     "test-console": "^1.0.0",
     "typescript": "2.1.4"
   },
   "peerDependencies": {
-    "lodash": "^4.17.4"
+    "lodash": "4.x"
   }
 }
