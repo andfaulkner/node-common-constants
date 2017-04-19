@@ -31,8 +31,8 @@ Magic numbers are confusing. If you see an algorithm containing the number 60, w
     import { datetime } as DATETIME_CONST from 'common-constants';
 
     console.log(DATETIME_CONST.daysPerMonth.jan); // => 31
-    console.log(DATETIME_CONST.daysInCommonYear); // => 365
-    console.log(DATETIME_CONST.hrInDay); // => 24
+    console.log(DATETIME_CONST.daysPerCommonYear); // => 365
+    console.log(DATETIME_CONST.hrPerDay); // => 24
 
 ----
 ## Date and time values (constants.datetime)
@@ -44,122 +44,159 @@ Magic numbers are confusing. If you see an algorithm containing the number 60, w
 
 Returns true if the given year is a leap year, false if not
 
+    // Microseconds per millisecond
+    microsecondsPerMillisecond: 1000
+    microsecondsPerMs:          1000
+    usPerMs:                    1000
+    usecondsPerMs:              1000
+    usPerMillisecond:           1000
+    usecondPerMillisecond:      1000
+    usecondsPerMillisecond:     1000
+    μPerMs:                     1000
+    μsPerMs:                    1000
+    μsecondsPerMs:              1000
+    μPerMillisecond:            1000
+    μsecondPerMillisecond:      1000
+    μsPerMillisecond:           1000
+    μsecondsPerMillisecond:     1000
+
     // Milliseconds per second
-    msPerSec:              1000,
-    msInSec:               1000,
-    millisecondsInSeconds: 1000,
-    millisecondsInSecond:  1000,
-    millisecondsPerSecond: 1000,
-    msInSeconds:           1000,
-    msInSecond:            1000,
-    msInASecond:           1000,
-    msIn1Sec:              1000,
-    msPerSecond:           1000,
-    msPerSeconds:          1000,
-    millisecondsPerSec:    1000,
+    msPerSec:                   1000
+    millisecondsPerSecond:      1000
+    msPerSecond:                1000
+    msPerSeconds:               1000
+    millisecondsPerSec:         1000
+
+
+    // Milliseconds per minute
+    msPerMinute:                60000
+    millisecondsPerMinute:      60000
+    msPerMin:                   60000
+    millisecondsPerMin:         60000
+
+    // Milliseconds per hour
+    msPerHour:                  3600000
+    millisecondsPerHour:        3600000
+    msPerHr:                    3600000
+    millisecondsPerHr:          3600000
+
+    // Milliseconds per day
+    msPerDay:                   86400000
+    millisecondsPerDay:         86400000
+
+    // Milliseconds per year (common and leap)
+    msPerCommonYear:            31536000000
+    millisecondsPerCommonYear:  31536000000
+    msPerLeapYear:              31622400000
+    millisecondsPerLeapYear:    31622400000
 
     // Seconds per minute
-    secInMin:              60
-    secsInMin:             60
-    secPerMin:             60
-    secsPerMin:            60
-    secondsPerMinute:      60
-    secondsInMinute:       60
-    secPerMinute:          60
-    secInMinute:           60
-    secsPerMinute:         60
-    secsInMinute:          60
+    secPerMin:                  60
+    secsPerMin:                 60
+    secondsPerMinute:           60
+    secPerMinute:               60
+    secsPerMinute:              60
 
     // Seconds per hour
-    secInHr:               3600
-    secsInHr:              3600
-    secPerHr:              3600
-    secsPerHr:             3600
-    secPerHour:            3600
-    secInHour:             3600
-    secsPerHour:           3600
-    secsInHour:            3600
-    secondsPerHour:        3600
-    secondsInHour:         3600
-    secondsPerHr:          3600
-    secondsInHr:           3600
+    secPerHr:                   3600
+    secsPerHr:                  3600
+    secPerHour:                 3600
+    secsPerHour:                3600
+    secondsPerHour:             3600
+    secondsPerHr:               3600
+
+    //Seconds per day
+    secPerDay:                  86400
+    secsPerDay:                 86400
+    secondPerDay:               86400
+    secondsPerDay:              86400
+
+    //Seconds per week
+    secPerWeek:                 604800
+    secsPerWeek:                604800
+    secondPerWeek:              604800
+    secondsPerWeek:             604800
+
+    // Seconds per year (common and leap)
+    secPerCommonYear:           31536000
+    secondsPerCommonYear:       31536000
+    secPerLeapYear:             31622400
+    secondsPerLeapYear:         31622400
 
     // Minutes per hour
-    minInHr:               60
-    minInHour:             60
-    minutesInHr:           60
-    minutesInHour:         60
-    minPerHr:              60
-    minPerHour:            60
-    minutesPerHour:        60
-    minutesPerHr:          60
+    minPerHr:                   60
+    minPerHour:                 60
+    minutesPerHour:             60
+    minutesPerHr:               60
+
+    // Minutes per day
+    minPerDay:                  1440
+    minutesPerDay:              1440
+
+    // Minutes per week
+    minPerWeek:                 10080
+    minutesPerWeek:             10080
+
+    // Minutes per year (common and leap)
+    minPerCommonYear:           525600
+    minutesPerCommonYear:       525600
+    minPerLeapYear:             527040
+    minutesPerLeapYear:         527040
 
     // Hours per day
-    hrInDay:               24
-    hrsInDay:              24
-    hoursInDay:            24
-    hrPerDay:              24
-    hrsPerDay:             24
-    hoursPerDay:           24
+    hrPerDay:                   24
+    hrsPerDay:                  24
+    hoursPerDay:                24
 
-    // Days per year (both leap and regular)
-    daysInCommonYear:      365
-    daysInLeapYear:        366
-    daysPerCommonYear:     365
-    daysPerLeapYear:       366
-    daysInCommonYr:        365
-    daysInLeapYr:          366
-    daysPerCommonYr:       365
-    daysPerLeapYr:         366
-    daysInNormalYear:      365
-    daysPerNormalYear:     365
-    daysInNormalYr:        365
-    daysPerNormalYr:       365
-    daysInRegularYear:     365
-    daysPerRegularYear:    365
-    daysInRegularYr:       365
-    daysPerRegularYr:      365
-    daysInNonleapYear:     365
-    daysPerNonleapYear:    365
-    daysInNonleapYr:       365
-    daysPerNonleapYr:      365
+    // Hours per week
+    hrPerWeek:                  168
+    hrsPerWeek:                 168
+    hoursPerWeek:               168
 
-    // Microseconds per millisecond
-    microsecondsInMillisecond: 1000,
-    microsecondsPerMillisecond: 1000,
-    microsecondsInMs: 1000,
-    microsecondsPerMs: 1000,
-    usInMs: 1000,
-    usPerMs: 1000,
-    usecondsInMs: 1000,
-    usecondsPerMs: 1000,
-    usInMillisecond: 1000,
-    usPerMillisecond: 1000,
-    usecondInMillisecond: 1000,
-    usecondPerMillisecond: 1000,
-    usecondsInMillisecond: 1000,
-    usecondsPerMillisecond: 1000,
-    μInMs: 1000,
-    μPerMs: 1000,
-    μsInMs: 1000,
-    μsPerMs: 1000,
-    μsecondsInMs: 1000,
-    μsecondsPerMs: 1000,
-    μInMillisecond: 1000,
-    μPerMillisecond: 1000,
-    μsecondInMillisecond: 1000,
-    μsecondPerMillisecond: 1000,
-    μsInMillisecond: 1000,
-    μsPerMillisecond: 1000,
-    μsecondsInMillisecond: 1000,
-    μsecondsPerMillisecond: 1000,
+    // Hours per year (common and leap)
+    hrPerCommonYear:            8760
+    hrsPerCommonYear:           8760
+    hoursPerCommonYear:         8760
+    hrPerLeapYear:              8784
+    hrsPerLeapYear:             8784
+    hoursPerLeapYear:           8784
 
+    // Days per week
+    daysPerWeek:                7
+
+    // Days per year (common and leap)
+    daysPerCommonYear:          365
+    daysPerCommonYr:            365
+    daysPerLeapYear:            366
+    daysPerLeapYr:              366
+    daysPerYrAverage:           365.25
+    daysPerYrMean:              365.25
+    daysPerYearAverage:         365.25
+    daysPerYearMean:            365.25
+
+    // Weeks per year (common and leap)
+    weeksPerYear: 
+        full: 52
+        rem:
+            common: 1
+            leap: 2
+    weeksPerCommonYear:                 365 / 7
+    weeksPerLeapYear:                   366 / 7
+    fullWeeksPerYear:                   52
+    weeksPerYearFloored:                52
+    weeksPerCommonYearFlooredRemainder: 1
+    weeksPerLeapYearFlooredRemainder:   2
+
+    // Months per year
+    monthsPerYear:                      12
+    monPerYear:                         12
+    monsPerYear:                        12
+    monPerYr:                           12
+    monsPerYr:                          12
+    monthsPerYr:                        12
 
     // Days per month
-    daysInMonth:           daysPerMonth
-    daysPerMon:            daysPerMonth
-    daysInMon:             daysPerMonth
-
+    daysPerMon:            daysPerMonth  // see 'daysPerMonths' property below 
     daysPerMonth:
         jan:               31
         january:           31
@@ -189,6 +226,27 @@ Returns true if the given year is a leap year, false if not
         november:          30
         dec:               31
         december:          31
+
+    // Unix / epoch start date & time components
+    epochStartYear:                     1970
+    epochStartMonth:                    1
+    epochStartDate:                     1
+    epochStartHour:                     0
+    epochStartMinute:                   0
+    epochStartSecond:                   0
+    epochStartDateStr:                  '1970-01-01'
+    epochStartTimeStr:                  '00:00:00.000Z'
+    epochStartDateTimeStr:              '1970-01-01T00:00:00.000Z'
+
+    unixStartYear:                      1970
+    unixStartMonth:                     1
+    unixStartDate:                      1
+    unixStartHour:                      0
+    unixStartMinute:                    0
+    unixStartSecond:                    0
+    unixStartDateStr:                   '1970-01-01'
+    unixStartTimeStr:                   '00:00:00.000Z'
+    unixStartDateTimeStr:               '1970-01-01T00:00:00.000Z'
 
 ----
 ## Math
