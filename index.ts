@@ -5,7 +5,7 @@ import { defaultPorts, dbPorts, dbPortsList } from './src/default-ports';
 import { science } from './src/science';
 import { regexps } from './src/regexps';
 
-const logLevels = {
+export const logLevels = {
     silly: 1,
     verbose: 2,
     debug: 3,
@@ -67,3 +67,6 @@ export const commonConstants = {
     },
     regexps,
 };
+
+const { lengths, lifeTheUniverseAndEverything } = commonConstants;
+export { datetime as dateTime, lengths, lifeTheUniverseAndEverything, defaultPorts, science, regexps, math }
