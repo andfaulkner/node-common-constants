@@ -79,6 +79,57 @@ describe('datetime', function() {
         expect(datetime.isLeap('2001')).to.be.false;
         expect(datetime.isLeap('2408')).to.be.true;
     });
+
+    it('is able to reference microsecond-handling methods', function () {
+        expect(datetime.microsecondsInMillisecond).to.eql(1000);
+        expect(datetime.microsecondsPerMillisecond).to.eql(1000);
+        expect(datetime.microsecondsInMs).to.eql(1000);
+        expect(datetime.microsecondsPerMs).to.eql(1000);
+        expect(datetime.usInMs).to.eql(1000);
+        expect(datetime.usPerMs).to.eql(1000);
+        expect(datetime.usecondsInMs).to.eql(1000);
+        expect(datetime.usecondsPerMs).to.eql(1000);
+        expect(datetime.usInMillisecond).to.eql(1000);
+        expect(datetime.usPerMillisecond).to.eql(1000);
+        expect(datetime.usecondInMillisecond).to.eql(1000);
+        expect(datetime.usecondPerMillisecond).to.eql(1000);
+        expect(datetime.usecondsInMillisecond).to.eql(1000);
+        expect(datetime.usecondsPerMillisecond).to.eql(1000);
+        expect(datetime.μInMs).to.eql(1000);
+        expect(datetime.μPerMs).to.eql(1000);
+        expect(datetime.μsInMs).to.eql(1000);
+        expect(datetime.μsPerMs).to.eql(1000);
+        expect(datetime.μsecondsInMs).to.eql(1000);
+        expect(datetime.μsecondsPerMs).to.eql(1000);
+        expect(datetime.μInMillisecond).to.eql(1000);
+        expect(datetime.μPerMillisecond).to.eql(1000);
+        expect(datetime.μsecondInMillisecond).to.eql(1000);
+        expect(datetime.μsecondPerMillisecond).to.eql(1000);
+        expect(datetime.μsInMillisecond).to.eql(1000);
+        expect(datetime.μsPerMillisecond).to.eql(1000);
+        expect(datetime.μsecondsInMillisecond).to.eql(1000);
+        expect(datetime.μsecondsPerMillisecond).to.eql(1000);
+    });
+
+    it('is able to reference hours/day methods', function () {
+        expect(datetime.hrInDay).to.eql(24);
+        expect(datetime.hrsInDay).to.eql(24);
+        expect(datetime.hoursInDay).to.eql(24);
+        expect(datetime.hrPerDay).to.eql(24);
+        expect(datetime.hrsPerDay).to.eql(24);
+        expect(datetime.hoursPerDay).to.eql(24);
+    });
+
+    it('is able to reference seconds/day methods', function () {
+        expect(datetime.secInDay).to.eql(86400);
+        expect(datetime.secsInDay).to.eql(86400);
+        expect(datetime.secPerDay).to.eql(86400);
+        expect(datetime.secsPerDay).to.eql(86400);
+        expect(datetime.secondInDay).to.eql(86400);
+        expect(datetime.secondsInDay).to.eql(86400);
+        expect(datetime.secondPerDay).to.eql(86400);
+        expect(datetime.secondsPerDay).to.eql(86400);
+    });
 });
 
 describe('constants.math', function() {

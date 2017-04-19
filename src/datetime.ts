@@ -46,7 +46,37 @@ export const datetime = {
     //Function to detect leap years
     isLeap,
 
-    // milliseconds per second
+    // Microseconds per millisecond
+    microsecondsInMillisecond: 1000,
+    microsecondsPerMillisecond: 1000,
+    microsecondsInMs: 1000,
+    microsecondsPerMs: 1000,
+    usInMs: 1000,
+    usPerMs: 1000,
+    usecondsInMs: 1000,
+    usecondsPerMs: 1000,
+    usInMillisecond: 1000,
+    usPerMillisecond: 1000,
+    usecondInMillisecond: 1000,
+    usecondPerMillisecond: 1000,
+    usecondsInMillisecond: 1000,
+    usecondsPerMillisecond: 1000,
+    μInMs: 1000,
+    μPerMs: 1000,
+    μsInMs: 1000,
+    μsPerMs: 1000,
+    μsecondsInMs: 1000,
+    μsecondsPerMs: 1000,
+    μInMillisecond: 1000,
+    μPerMillisecond: 1000,
+    μsecondInMillisecond: 1000,
+    μsecondPerMillisecond: 1000,
+    μsInMillisecond: 1000,
+    μsPerMillisecond: 1000,
+    μsecondsInMillisecond: 1000,
+    μsecondsPerMillisecond: 1000,
+
+    // Milliseconds per second
     msInSec: 1000,
     msPerSec: 1000,
     millisecondsInSeconds: 1000,
@@ -60,7 +90,7 @@ export const datetime = {
     msPerSeconds: 1000,
     millisecondsPerSec: 1000,
 
-    //Seconds per minute
+    // Seconds per minute
     secInMin: 60,
     secsInMin: 60,
     secPerMin: 60,
@@ -72,19 +102,19 @@ export const datetime = {
     secsPerMinute: 60,
     secsInMinute: 60,
 
-    //Seconds per hour
-    secInHr:               3600,
-    secsInHr:              3600,
-    secPerHr:              3600,
-    secsPerHr:             3600,
-    secPerHour:            3600,
-    secInHour:             3600,
-    secsPerHour:           3600,
-    secsInHour:            3600,
-    secondsPerHour:        3600,
-    secondsInHour:         3600,
-    secondsPerHr:          3600,
-    secondsInHr:           3600,
+    // Seconds per hour
+    secInHr: 3600,
+    secsInHr: 3600,
+    secPerHr: 3600,
+    secsPerHr: 3600,
+    secPerHour: 3600,
+    secInHour: 3600,
+    secsPerHour: 3600,
+    secsInHour: 3600,
+    secondsPerHour: 3600,
+    secondsInHour: 3600,
+    secondsPerHr: 3600,
+    secondsInHr: 3600,
 
     //Seconds per day
     secInDay: 86400,
@@ -106,7 +136,7 @@ export const datetime = {
     minutesPerHr: 60,
     minutesPerHour: 60,
 
-    // hours per day
+    // Hours per day
     hrInDay: 24,
     hrsInDay: 24,
     hoursInDay: 24,
@@ -114,7 +144,7 @@ export const datetime = {
     hrsPerDay: 24,
     hoursPerDay: 24,
 
-    // days per year (common and leap)
+    // Days per year (common and leap)
     daysInCommonYear: 365,
     daysInLeapYear: 366,
     daysPerCommonYear: 365,
@@ -124,7 +154,7 @@ export const datetime = {
     daysPerCommonYr: 365,
     daysPerLeapYr: 366,
 
-    // days per month (provides values for each month)
+    // Days per month (provides values for each month)
     daysPerMonth,
     daysInMonth: daysPerMonth,
     daysPerMon: daysPerMonth,

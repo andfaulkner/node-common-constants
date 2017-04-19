@@ -124,6 +124,37 @@ Returns true if the given year is a leap year, false if not
     daysInNonleapYr:       365
     daysPerNonleapYr:      365
 
+    // Microseconds per millisecond
+    microsecondsInMillisecond: 1000,
+    microsecondsPerMillisecond: 1000,
+    microsecondsInMs: 1000,
+    microsecondsPerMs: 1000,
+    usInMs: 1000,
+    usPerMs: 1000,
+    usecondsInMs: 1000,
+    usecondsPerMs: 1000,
+    usInMillisecond: 1000,
+    usPerMillisecond: 1000,
+    usecondInMillisecond: 1000,
+    usecondPerMillisecond: 1000,
+    usecondsInMillisecond: 1000,
+    usecondsPerMillisecond: 1000,
+    μInMs: 1000,
+    μPerMs: 1000,
+    μsInMs: 1000,
+    μsPerMs: 1000,
+    μsecondsInMs: 1000,
+    μsecondsPerMs: 1000,
+    μInMillisecond: 1000,
+    μPerMillisecond: 1000,
+    μsecondInMillisecond: 1000,
+    μsecondPerMillisecond: 1000,
+    μsInMillisecond: 1000,
+    μsPerMillisecond: 1000,
+    μsecondsInMillisecond: 1000,
+    μsecondsPerMillisecond: 1000,
+
+
     // Days per month
     daysInMonth:           daysPerMonth
     daysPerMon:            daysPerMonth
