@@ -1,4 +1,4 @@
-# 2017-04-19
+# 2017-04-19 -- Version 3.0.0
 ### BREAKING CHANGE: removed date and time constants with 'In' inside
   *  instead only 'Per' constant names are used.
   *  example: dateTime.minInHr no longer exists. dateTime.minPerHr is the equivalent.
