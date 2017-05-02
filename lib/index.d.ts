@@ -3,7 +3,9 @@ import { datetime } from './src/datetime';
 import { math } from './src/math';
 import { defaultPorts } from './src/default-ports';
 import { science } from './src/science';
+import { lengths } from './src/lengths';
 import { regexps } from './src/regexps';
+import { lifeTheUniverseAndEverything } from './src/life-the-universe-and-everything';
 export declare const logLevels: {
     silly: number;
     verbose: number;
@@ -845,5 +847,4 @@ export declare const commonConstants: {
         HEX_OF_COLOR_VAL: RegExp;
     };
 };
-export { lengths, lifeTheUniverseAndEverything };
-export { datetime as dateTime, defaultPorts, science, regexps, math };
+export { datetime as dateTime, defaultPorts, science, regexps, math, lengths, lifeTheUniverseAndEverything };

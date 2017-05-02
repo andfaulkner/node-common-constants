@@ -3,7 +3,10 @@ import { datetime } from './src/datetime';
 import { math } from './src/math';
 import { defaultPorts, dbPorts, dbPortsList } from './src/default-ports';
 import { science } from './src/science';
+import { lengths } from './src/lengths';
 import { regexps } from './src/regexps';
+import { lifeTheUniverseAndEverything } from './src/life-the-universe-and-everything';
+
 
 export const logLevels = {
     silly: 1,
@@ -45,30 +48,9 @@ export const commonConstants = {
     lifeTheUniverseEverything: 42,
 
     // TODO document this section
-    lengths: {
-        maxChars: {
-            // web requirements
-            domainName: 253,
-            emailAddress: 254,
-            
-            // social media
-            tweet: 140,
-            twitter: 140,
-            twitterTweet: 140,
-    
-            postgresIdentifier: 63
-        },
-
-        maxSeconds: {
-            vineVideo: 6.5,
-            vine: 6.5,
-            youtubeVideo: 43200,
-        }
-    },
+    lengths,
     regexps,
 };
 
-const { lengths, lifeTheUniverseAndEverything } = commonConstants;
-
-export { lengths, lifeTheUniverseAndEverything }
-export { datetime as dateTime, defaultPorts, science, regexps, math }
+export { datetime as dateTime, defaultPorts, science, regexps, math, lengths,
+         lifeTheUniverseAndEverything }
