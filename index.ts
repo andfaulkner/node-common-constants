@@ -69,4 +69,6 @@ export const commonConstants = {
 };
 
 const { lengths, lifeTheUniverseAndEverything } = commonConstants;
-export { datetime as dateTime, lengths, lifeTheUniverseAndEverything, defaultPorts, science, regexps, math }
+
+export { lengths, lifeTheUniverseAndEverything }
+export { datetime as dateTime, defaultPorts, science, regexps, math }

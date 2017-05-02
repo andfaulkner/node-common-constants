@@ -16,6 +16,7 @@ const _ = require('lodash');
 
 /*********************************** IMPORT FILES TO BE TESTED ************************************/
 const CONSTANTS = require('../lib/index').commonConstants;
+
 const datetime = CONSTANTS.datetime;
 const math = CONSTANTS.math;
 const defaultPorts = CONSTANTS.defaultPorts;

@@ -845,4 +845,5 @@ export declare const commonConstants: {
         HEX_OF_COLOR_VAL: RegExp;
     };
 };
-export { datetime as dateTime, lengths, lifeTheUniverseAndEverything, defaultPorts, science, regexps, math };
+export { lengths, lifeTheUniverseAndEverything };
+export { datetime as dateTime, defaultPorts, science, regexps, math };

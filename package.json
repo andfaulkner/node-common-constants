@@ -10,8 +10,9 @@
   "scripts": {
     "compile-ts": "./node_modules/typescript/bin/tsc -p ./",
     "compile-ts:watch": "./node_modules/typescript/bin/tsc -p ./ --watch",
+    "start": "npm run test",
     "test": "npm run compile-ts; mocha test/",
-    "test:watch": "chokidar ./lib/** ./config/** ./test/** --initial -c \"npm run compile-ts; mocha test/\""
+    "test:watch": "chokidar ./src/**/*.ts ./config/** ./test/** ./index.ts ./test/** --initial -c \"npm run compile-ts; mocha test/\""
   },
   "repository": {
     "type": "git",
