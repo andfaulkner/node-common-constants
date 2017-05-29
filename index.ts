@@ -54,3 +54,23 @@ export const commonConstants = {
 
 export { datetime as dateTime, defaultPorts, science, regexps, math, lengths,
          lifeTheUniverseAndEverything }
+
+/**
+ * All letters in the alphabet, in both upper and lowercase, and all numbers.
+ */
+export const alphanumsAllBothCaps = `ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890`;
+
+/**
+ * All letters in the alphabet in uppercase.
+ */
+export const alphabetUppercase = `ABCDEFGHIJKLMNOPQRSTUVWXYZ`;
+
+/**
+ * All letters in the alphabet in lowercase.
+ */
+export const alphabetLowercase = `abcdefghijklmnopqrstuvwxyz`;
+
+/**
+ * All digits.
+ */
+export const digits = `1234567890`;

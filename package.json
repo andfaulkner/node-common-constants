@@ -11,8 +11,8 @@
     "compile-ts": "./node_modules/typescript/bin/tsc -p ./",
     "compile-ts:watch": "./node_modules/typescript/bin/tsc -p ./ --watch",
     "start": "npm run test",
-    "test": "npm run compile-ts; mocha test/",
-    "test:watch": "chokidar ./src/**/*.ts ./config/** ./test/** ./index.ts ./test/** --initial -c \"npm run compile-ts; mocha test/\""
+    "test": "LOG_LEVEL=silly npm run compile-ts; LOG_LEVEL=silly mocha test/",
+    "test-watch": "chokidar ./src/**/*.ts ./index.ts ./test/** --initial -c \"npm run compile-ts; mocha test/\""
   },
   "repository": {
     "type": "git",
@@ -40,7 +40,11 @@
     "url": "https://github.com/andfaulkner/node-common-constants/issues"
   },
   "homepage": "https://github.com/andfaulkner/node-common-constants#readme",
-  "dependencies": {},
+  "dependencies": {
+    "@types/chai": "^3.5.2",
+    "@types/mocha": "^2.2.41",
+    "@types/node": "^6.0.52"
+  },
   "devDependencies": {
     "@types/node": "^6.0.52",
     "chai": "^3.5.0",

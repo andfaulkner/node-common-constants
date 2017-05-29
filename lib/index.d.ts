@@ -848,3 +848,19 @@ export declare const commonConstants: {
     };
 };
 export { datetime as dateTime, defaultPorts, science, regexps, math, lengths, lifeTheUniverseAndEverything };
+/**
+ * All letters in the alphabet, in both upper and lowercase, and all numbers.
+ */
+export declare const alphanumsAllBothCaps: string;
+/**
+ * All letters in the alphabet in uppercase.
+ */
+export declare const alphabetUppercase: string;
+/**
+ * All letters in the alphabet in lowercase.
+ */
+export declare const alphabetLowercase: string;
+/**
+ * All digits.
+ */
+export declare const digits: string;

@@ -7,7 +7,6 @@ const oldProcArgs = Object.assign({}, process.argv);
 /************************************** THIRD-PARTY IMPORTS ***************************************/
 const { expect } = require('chai');
 const sinon = require('sinon');
-const mocha = require('mocha');
 
 const fs = require('fs');
 const path = require('path');
@@ -28,6 +27,8 @@ const lifeTheUniverseAndEverything = CONSTANTS.lifeTheUniverseAndEverything;
 const lengths = CONSTANTS.lengths;
 const { dbPortsList, dbPorts } = CONSTANTS;
 const { regexps } = CONSTANTS;
+
+import { digits, alphabetLowercase, alphabetUppercase, alphanumsAllBothCaps } from '../index';
 
 /******************************************** HELPERS *********************************************/
 /**
@@ -217,6 +218,21 @@ describe('constants.regexps', function() {
     });
     it('has field HEX_OF_COLOR_VAL', function () {
         expect(regexps.HEX_OF_COLOR_VAL).to.exist;
+    });
+});
+
+describe('top-level exports', function() {
+    it('has export digits', function () {
+        expect(digits).to.exist;
+    });
+    it('has export alphabetLowercase', function () {
+        expect(alphabetLowercase).to.exist;
+    });
+    it('has export alphabetUppercase', function () {
+        expect(alphabetUppercase).to.exist;
+    });
+    it('has export alphanumsAllBothCaps', function () {
+        expect(alphanumsAllBothCaps).to.exist;
     });
 });
 
