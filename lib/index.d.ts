@@ -596,6 +596,25 @@ export declare const commonConstants: {
         unixStartTimeStr: string;
         unixStartDateTimeStr: string;
     };
+    http: {
+        statusCodes: {
+            ok: number;
+            multipleChoices: number;
+            movedPermanently: number;
+            found: number;
+            notModified: number;
+            temporaryRedirect: number;
+            badRequest: number;
+            unauthorized: number;
+            forbidden: number;
+            notFound: number;
+            gone: number;
+            internalServerError: number;
+            notImplemented: number;
+            serviceUnavailable: number;
+            permissionDenied: number;
+        };
+    };
     math: {
         pi: number;
         PI: number;

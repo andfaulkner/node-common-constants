@@ -17,6 +17,7 @@ const _ = require('lodash');
 const CONSTANTS = require('../lib/index').commonConstants;
 
 const datetime = CONSTANTS.datetime;
+const http = CONSTANTS.http;
 const math = CONSTANTS.math;
 const defaultPorts = CONSTANTS.defaultPorts;
 const science = CONSTANTS.science;
@@ -110,6 +111,12 @@ describe('datetime', function() {
         expect(datetime.secsPerDay).to.eql(86400);
         expect(datetime.secondPerDay).to.eql(86400);
         expect(datetime.secondsPerDay).to.eql(86400);
+    });
+});
+
+describe('constants.http', function() {
+    it('exists', function () {
+        expect(http).to.exist;
     });
 });
 

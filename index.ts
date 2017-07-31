@@ -6,6 +6,7 @@ import { science } from './src/science';
 import { lengths } from './src/lengths';
 import { regexps } from './src/regexps';
 import { lifeTheUniverseAndEverything } from './src/life-the-universe-and-everything';
+import { http } from './src/http';
 
 
 export const logLevels = {
@@ -23,6 +24,8 @@ export const commonConstants = {
     datetime,
     dateTime: datetime,
     dateAndTime: datetime,
+
+    http,
 
     math,
 
