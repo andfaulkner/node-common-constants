@@ -614,6 +614,14 @@ export declare const commonConstants: {
             serviceUnavailable: number;
             permissionDenied: number;
         };
+        allRequestTypes: string[];
+        requestTypes: string[];
+        reqTypes: string[];
+        allReqTypes: string[];
+        commonRequestTypes: string[];
+        mainRequestTypes: string[];
+        commonReqTypes: string[];
+        mainReqTypes: string[];
     };
     math: {
         pi: number;
@@ -883,3 +891,7 @@ export declare const alphabetLowercase: string;
  * All digits.
  */
 export declare const digits: string;
+/**
+ * Commonly used http constants.
+ */
+export { requestTypes, allRequestTypes, commonRequestTypes, mainRequestTypes, reqTypes, allReqTypes, mainReqTypes, commonReqTypes, statusCodes } from './src/http';

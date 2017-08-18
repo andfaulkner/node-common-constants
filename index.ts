@@ -77,3 +77,10 @@ export const alphabetLowercase = `abcdefghijklmnopqrstuvwxyz`;
  * All digits.
  */
 export const digits = `1234567890`;
+
+/**
+ * Commonly used http constants.
+ */
+export { requestTypes, allRequestTypes, commonRequestTypes, mainRequestTypes,
+         reqTypes, allReqTypes, mainReqTypes, commonReqTypes,
+         statusCodes } from './src/http';

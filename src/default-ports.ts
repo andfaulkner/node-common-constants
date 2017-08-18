@@ -34,7 +34,7 @@ export const dbPorts = {
 /**
  * Flat array containing list of all database ports
  */
-export const dbPortsList = ((dbPorts) => uniq(
+export const dbPortsList = (dbPorts => uniq(
     Object.keys(dbPorts).reduce((acc, db) => acc.concat(dbPorts[db]), [])
 ))(dbPorts);
 
@@ -55,4 +55,3 @@ export const defaultPorts = Object.assign({},
         ssh: 22,
     }
 );
-
