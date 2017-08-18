@@ -54,6 +54,7 @@
     "mocha": "^3.2.0",
     "sinon": "^1.17.6",
     "test-console": "^1.0.0",
+    "ts-node": "^3.3.0",
     "typescript": "2.1.4"
   },
   "peerDependencies": {
