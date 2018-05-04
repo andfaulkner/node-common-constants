@@ -1,4 +1,4 @@
-v3.1.0 (2018-05-03)
+v4.1.0 (2018-05-03)
 ===================
 *   Add prettier & prettier config
 *   Add tslint, tslint config, & tslint plugins
