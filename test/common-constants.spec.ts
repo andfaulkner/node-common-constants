@@ -5,12 +5,12 @@ process.env.mocha = true;
 const oldProcArgs = Object.assign({}, process.argv);
 
 /************************************** THIRD-PARTY IMPORTS ***************************************/
-const { expect } = require('chai');
+const {expect} = require('chai');
 const sinon = require('sinon');
 
 const fs = require('fs');
 const path = require('path');
-const { stderr, stdout } = require('test-console');
+const {stderr, stdout} = require('test-console');
 const _ = require('lodash');
 
 /*********************************** IMPORT FILES TO BE TESTED ************************************/
@@ -26,10 +26,10 @@ const logLevels = CONSTANTS.logLevels;
 const logLvls = CONSTANTS.logLvls;
 const lifeTheUniverseAndEverything = CONSTANTS.lifeTheUniverseAndEverything;
 const lengths = CONSTANTS.lengths;
-const { dbPortsList, dbPorts } = CONSTANTS;
-const { regexps } = CONSTANTS;
+const {dbPortsList, dbPorts} = CONSTANTS;
+const {regexps} = CONSTANTS;
 
-import { digits, alphabetLowercase, alphabetUppercase, alphanumsAllBothCaps } from '../index';
+import {digits, alphabetLowercase, alphabetUppercase, alphanumsAllBothCaps} from '../index';
 
 /******************************************** HELPERS *********************************************/
 /**
@@ -52,7 +52,7 @@ function blockErrorOutput(fn) {
     console.error = errorOrig;
     console.warn = warnOrig;
 
-    return { errorLogs, warnLogs, result };
+    return {errorLogs, warnLogs, result};
 }
 
 /********************************************* TESTS **********************************************/
@@ -77,13 +77,13 @@ describe('datetime', function() {
         expect(datetime.isLeap(2400)).to.be.true;
         expect(datetime.isLeap(2408)).to.be.true;
     });
-    it('datetime.isLeap casts strings to numbers and runs accordingly', function () {
+    it('datetime.isLeap casts strings to numbers and runs accordingly', function() {
         expect(datetime.isLeap('2000')).to.be.true;
         expect(datetime.isLeap('2001')).to.be.false;
         expect(datetime.isLeap('2408')).to.be.true;
     });
 
-    it('is able to reference microsecond-handling methods', function () {
+    it('is able to reference microsecond-handling methods', function() {
         expect(datetime.microsecondsPerMillisecond).to.eql(1000);
         expect(datetime.microsecondsPerMs).to.eql(1000);
         expect(datetime.usPerMs).to.eql(1000);
@@ -100,13 +100,13 @@ describe('datetime', function() {
         expect(datetime.μsecondsPerMillisecond).to.eql(1000);
     });
 
-    it('is able to reference hours/day methods', function () {
+    it('is able to reference hours/day methods', function() {
         expect(datetime.hrPerDay).to.eql(24);
         expect(datetime.hrsPerDay).to.eql(24);
         expect(datetime.hoursPerDay).to.eql(24);
     });
 
-    it('is able to reference seconds/day methods', function () {
+    it('is able to reference seconds/day methods', function() {
         expect(datetime.secPerDay).to.eql(86400);
         expect(datetime.secsPerDay).to.eql(86400);
         expect(datetime.secondPerDay).to.eql(86400);
@@ -115,38 +115,38 @@ describe('datetime', function() {
 });
 
 describe('constants.http', function() {
-    it('exists', function () {
+    it('exists', function() {
         expect(http).to.exist;
     });
 });
 
 describe('constants.math', function() {
-    it('exists', function () {
+    it('exists', function() {
         expect(math).to.exist;
     });
 });
 
 describe('constants.defaultPorts', function() {
-    it('exists', function () {
+    it('exists', function() {
         expect(defaultPorts).to.exist;
     });
 });
 
 describe('constants.dbPorts', function() {
-    it('exists', function () {
+    it('exists', function() {
         expect(dbPorts).to.exist;
     });
 });
 
 describe('constants.dbPortsList', function() {
-    it('exists', function () {
+    it('exists', function() {
         expect(dbPortsList).to.exist;
     });
     it('is an array', function() {
         expect(dbPortsList).to.be.a('array');
     });
     it('contains only numbers', function() {
-        _.forEach(dbPortsList, (dbPort) => {
+        _.forEach(dbPortsList, dbPort => {
             expect(dbPort).to.be.a('number');
         });
     });
@@ -169,76 +169,76 @@ describe('constants.dbPortsList', function() {
 });
 
 describe('constants.science', function() {
-    it('exists', function () {
+    it('exists', function() {
         expect(science).to.exist;
     });
 });
 
 describe('constants.sci', function() {
-    it('exists', function () {
+    it('exists', function() {
         expect(sci).to.exist;
     });
 });
 
 describe('constants.logLevels', function() {
-    it('exists', function () {
+    it('exists', function() {
         expect(logLevels).to.exist;
     });
 });
 
 describe('constants.logLvls', function() {
-    it('exists', function () {
+    it('exists', function() {
         expect(logLvls).to.exist;
     });
 });
 
 describe('constants.lifeTheUniverseAndEverything', function() {
-    it('exists', function () {
+    it('exists', function() {
         expect(lifeTheUniverseAndEverything).to.exist;
     });
 });
 
 describe('constants.lengths', function() {
-    it('exists', function () {
+    it('exists', function() {
         expect(lengths).to.exist;
     });
-    it('has field maxChars', function () {
+    it('has field maxChars', function() {
         expect(lengths.maxChars).to.exist;
     });
-    it('has field maxSeconds', function () {
+    it('has field maxSeconds', function() {
         expect(lengths.maxSeconds).to.exist;
     });
 });
 
 describe('constants.regexps', function() {
-    it('exists', function () {
+    it('exists', function() {
         expect(regexps).to.exist;
     });
-    it('has field FIRST_CHAR_REGEXP', function () {
+    it('has field FIRST_CHAR_REGEXP', function() {
         expect(regexps.FIRST_CHAR_REGEXP).to.exist;
     });
-    it('has field TIME_24HR_FORMAT', function () {
+    it('has field TIME_24HR_FORMAT', function() {
         expect(regexps.TIME_24HR_FORMAT).to.exist;
     });
-    it('has field "DD/MM/YY_DATE"', function () {
-        expect(regexps["DD/MM/YY_DATE"]).to.exist;
+    it('has field "DD/MM/YY_DATE"', function() {
+        expect(regexps['DD/MM/YY_DATE']).to.exist;
     });
-    it('has field HEX_OF_COLOR_VAL', function () {
+    it('has field HEX_OF_COLOR_VAL', function() {
         expect(regexps.HEX_OF_COLOR_VAL).to.exist;
     });
 });
 
 describe('top-level exports', function() {
-    it('has export digits', function () {
+    it('has export digits', function() {
         expect(digits).to.exist;
     });
-    it('has export alphabetLowercase', function () {
+    it('has export alphabetLowercase', function() {
         expect(alphabetLowercase).to.exist;
     });
-    it('has export alphabetUppercase', function () {
+    it('has export alphabetUppercase', function() {
         expect(alphabetUppercase).to.exist;
     });
-    it('has export alphanumsAllBothCaps', function () {
+    it('has export alphanumsAllBothCaps', function() {
         expect(alphanumsAllBothCaps).to.exist;
     });
 });
