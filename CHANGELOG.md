@@ -1,3 +1,15 @@
+v3.1.0 (2018-05-03)
+===================
+*   Add prettier & prettier config
+*   Add tslint, tslint config, & tslint plugins
+*   Node -> 8.10.0
+*   Move all dependencies to devDependencies
+    *   They aren't used by the core module code
+*   lodash -> 4.17.10
+*   Upgraded Mocha, Chai, Sinon to latest
+
+----
+
 # 2017-04-19 -- Version 3.0.0
 ### BREAKING CHANGE: removed date and time constants with 'In' inside
   *  instead only 'Per' constant names are used.
