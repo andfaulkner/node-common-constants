@@ -3,10 +3,12 @@ v3.1.0 (2018-05-03)
 *   Add prettier & prettier config
 *   Add tslint, tslint config, & tslint plugins
 *   Node -> 8.10.0
+    *   Including upgrading Node typings to matching version
 *   Move all dependencies to devDependencies
     *   They aren't used by the core module code
 *   lodash -> 4.17.10
 *   Upgraded Mocha, Chai, Sinon to latest
+*   Typings for Sinon & Lodash
 
 ----
 
