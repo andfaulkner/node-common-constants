@@ -40,12 +40,10 @@
     "url": "https://github.com/andfaulkner/node-common-constants/issues"
   },
   "homepage": "https://github.com/andfaulkner/node-common-constants#readme",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "@types/chai": "^4.1.3",
     "@types/mocha": "^5.2.0",
-    "@types/node": "^6.0.52"
-  },
-  "devDependencies": {
     "@types/node": "^6.0.52",
     "chai": "^4.1.2",
     "eslint-plugin-import": "^2.11.0",
